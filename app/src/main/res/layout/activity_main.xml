@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_teal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/firstActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/firstActivityTitle">
+
+
+        <EditText
+            android:id="@+id/number1EditTxt"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/txt_input_drawable"
+            android:cursorVisible="true"
+            android:elevation="0dp"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp" />
+
+        <EditText
+            android:id="@+id/number2EditTxt"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/txt_input_drawable"
+            android:cursorVisible="true"
+            android:elevation="0dp"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddition"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_shape_drawable"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubtraction"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_shape_drawable"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnMultiply"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_shape_drawable"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDivision"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_shape_drawable"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
